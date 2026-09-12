@@ -57,5 +57,5 @@ Actual Result: The request succeeds, and a new visitor record is created with no
 NOte: While going through the backend with the help of anthropic . i found a little off with pagination. i am not sure whether to indicate it as a bug or not .
  what i mean is invalid values are not validated or rejected  for eg: if we search for 
  a. page=0 and page=-1 produce a negative offset,  returns the same data as page=1.
- b. page=abc (non-numeric) still return the same result as page=0.
- it doesn't effect the web page as whole still worth mentioning.
+ b. page=abc also  return the same result as page=0.
+ it doesn't effect the web page as whole but i think it still worth mentioning.
